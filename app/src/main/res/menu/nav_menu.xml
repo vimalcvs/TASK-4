@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:title="Fitness">
+            <menu>
+                <item
+                    android:id="@+id/bmiCalculator"
+                    android:title="BMI"
+                    android:icon="@drawable/ic_baseline_calculate_24"/>
+
+            </menu>
+        </item>
+
+
+        <item android:title="More" >
+            <menu>
+                <item
+                    android:id="@+id/favourite"
+                    android:title="Favourite"
+                    android:icon="@drawable/ic_baseline_favorite_24"/>
+                <item
+                    android:id="@+id/rate"
+                    android:title="Rate Us"
+                    android:icon="@drawable/ic_baseline_star_rate_24"/>
+            </menu>
+        </item>
+        <item android:id="@+id/settings"
+            android:title="Settings"
+            android:icon="@drawable/ic_baseline_settings_24">
+        </item>
+    </group>
+</menu>

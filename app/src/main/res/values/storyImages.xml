@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="storyImages">
+        <item>https://e1.pxfuel.com/desktop-wallpaper/343/166/desktop-wallpaper-cartoon-low-poly-village-cartoon-village-thumbnail.jpg</item>
+        <item>https://www.champak.in/wp-content/uploads/2019/03/THE-PROMISE-OF-FRIENDSHIP1.png</item>
+        <item>https://www.thetatva.in/wp-content/uploads/2023/01/main-qimg-c2b0f22923ed474ace813eb4737e8dd0-c.jpg</item>
+        <item>https://i.pinimg.com/550x/d3/b6/4f/d3b64fc1e07913ecd3d13f1a0f599e98.jpg</item>
+        <item>https://e1.pxfuel.com/desktop-wallpaper/195/333/desktop-wallpaper-peaceful-anime-relaxing-anime.jpg</item>
+        <item>https://wallpapers.com/images/featured/ahd1eqpvwq8aoofp.jpg</item>
+        <item>https://wallpaperaccess.com/full/206971.jpg</item>
+        <item>https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2020/10/Pharming-Attack-Hacker-1.jpg</item>
+        <item>https://picsum.photos/id/28/367/267</item>
+        <item>https://static.vecteezy.com/system/resources/previews/003/217/491/original/cyber-hacker-attack-background-skull-free-vector.jpg</item>
+
+
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DietPlanFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_diet_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/bouncing_fruits_anim"
+
+            />
+
+
+        <LinearLayout
+
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@drawable/searchbar_background"
+            android:gravity="">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_more_horiz_24"
+
+                />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBannerList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/activity_diet_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategoriesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/rvBannerList" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDietList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvCategoriesList" />
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:padding="@dimen/_10sdp"-->
+    <!--        android:layout_marginTop="@dimen/_5sdp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/rvBannerList">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/buttonBaking"-->
+    <!--            android:background="@drawable/diet_plan_menu_button_bg"-->
+    <!--            android:layout_width="@dimen/_90sdp"-->
+    <!--            android:layout_height="@dimen/_30sdp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--           app:layout_constraintEnd_toStartOf="@id/buttonDesserts"-->
+    <!--            >-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvBaking"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Baking"-->
+    <!--                android:textSize="@dimen/_12ssp"-->
+    <!--                android:layout_marginStart="@dimen/_4sdp"-->
+    <!--              android:gravity="center"-->
+    <!--                android:textColor="#A8A8A8"/>-->
+    <!--            <View-->
+    <!--                android:id="@+id/lineBaking"-->
+    <!--                android:layout_width="@dimen/_1sdp"-->
+    <!--                android:rotation="0"-->
+    <!--                android:layout_marginEnd="@dimen/_3sdp"-->
+    <!--                android:layout_marginStart="@dimen/_10sdp"-->
+    <!--                android:background="#BFBFBF"-->
+    <!--                android:layout_height="match_parent"/>-->
+    <!--            <ImageView-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="@dimen/_25sdp"-->
+    <!--                android:layout_height="@dimen/_25sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:paddingStart="@dimen/_1sdp"-->
+    <!--                android:paddingEnd="@dimen/_6sdp"-->
+    <!--                android:src="@drawable/ic_baking"-->
+    <!--                android:rotation="-30"-->
+    <!--                android:scaleType="centerCrop"/>-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/buttonDesserts"-->
+    <!--            android:background="@drawable/diet_plan_menu_button_bg"-->
+    <!--            android:layout_width="@dimen/_90sdp"-->
+    <!--            android:layout_height="@dimen/_30sdp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:gravity="center"-->
+    <!--           app:layout_constraintStart_toEndOf="@id/buttonBaking"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@id/buttonSalads"-->
+
+
+    <!--            >-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvDesserts"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Desserts"-->
+    <!--                android:textSize="@dimen/_12ssp"-->
+    <!--                android:layout_marginStart="@dimen/_4sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textColor="#A8A8A8"/>-->
+    <!--            <View-->
+    <!--                android:id="@+id/lineDesserts"-->
+    <!--                android:layout_width="0.8dp"-->
+    <!--                android:rotation="0"-->
+    <!--                android:background="#BFBFBF"-->
+    <!--                android:layout_marginStart="@dimen/_4sdp"-->
+    <!--                android:layout_height="match_parent"/>-->
+    <!--            <ImageView-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="@dimen/_25sdp"-->
+    <!--                android:layout_height="@dimen/_25sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:paddingStart="@dimen/_1sdp"-->
+    <!--                android:paddingEnd="@dimen/_6sdp"-->
+    <!--                android:src="@drawable/ic_dessert"-->
+    <!--                android:scaleType="centerCrop"/>-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/buttonSalads"-->
+    <!--            android:background="@drawable/diet_plan_menu_button_bg"-->
+    <!--            android:layout_width="@dimen/_90sdp"-->
+    <!--            android:layout_height="@dimen/_30sdp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:gravity="center"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintStart_toEndOf="@id/buttonDesserts"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+
+    <!--            >-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvSalads"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Salads"-->
+    <!--                android:textSize="@dimen/_12ssp"-->
+    <!--                android:layout_marginStart="@dimen/_4sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textColor="#A8A8A8"/>-->
+    <!--            <View-->
+    <!--                android:id="@+id/lineSalads"-->
+    <!--                android:layout_width="0.5dp"-->
+    <!--                android:rotation="0"-->
+    <!--                android:layout_marginEnd="@dimen/_3sdp"-->
+    <!--                android:layout_marginStart="@dimen/_10sdp"-->
+    <!--                android:background="#BFBFBF"-->
+    <!--                android:layout_height="match_parent"/>-->
+    <!--            <ImageView-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="@dimen/_25sdp"-->
+    <!--                android:layout_height="@dimen/_25sdp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:paddingStart="@dimen/_1sdp"-->
+    <!--                android:paddingEnd="@dimen/_6sdp"-->
+    <!--              android:src="@drawable/ic_salad"-->
+    <!--                android:scaleType="centerCrop"/>-->
+    <!--        </LinearLayout>-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

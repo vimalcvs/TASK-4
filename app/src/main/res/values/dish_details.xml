@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dishDetails">
+
+        <item>Cooked quinoa is combined with kale, red onion, red bell pepper, cucumber, feta cheese,
+            and pumpkin seeds Read More...</item>
+
+        <item>Mushrooms stuffed with a delicious filling, topped with grated cheese and
+            baked to perfection. You can serve Read More...</item>
+
+        <item>Idli is a popular south-Indian recipe and most of us like to include it in our breakfast.
+    While you must be familiar with all the Read More...</item>
+
+        <item>Large vegetarian feasts, called Vishu Sadhya, are prepared to commemorate the joyous occasion.
+            This Nutritious Read More...</item>
+
+        <item>Beetroot is jam-packed with nutrients and vitamins, as well as plenty of disease preventing properties.
+            Here Read More...</item>
+
+        <item>Amazingly beautiful, good combination of spices</item>
+        <item>description 2</item>
+        <item>description 3</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dishDetailsComplete">
+
+        <item>Cooked quinoa is combined with kale, red onion, red bell pepper, cucumber, feta cheese,
+            and pumpkin seeds. Top it with an olive oil and lemon juice dressing and toss to combine. </item>
+        <item>Mushrooms stuffed with a delicious filling, topped with grated cheese and baked to perfection. You can serve these stuffed mushrooms as a snack or appetiser for your next dinner party.</item>
+
+        <item>Idli is a popular south-Indian recipe and most of us like to include it in our breakfast. While you must be familiar with all the classic idli recipes, here we bring you a healthy and nutritious beetroot idli that is a must-try!
+</item>
+        <item>Large vegetarian feasts, called Vishu Sadhya, are prepared to commemorate the joyous occasion. This Nutritious Jackfruit and Spinach Sambar recipe by Sivapriya Balagopal – Head of Spices Innovation, ECPL is exciting and a complete package of health and a zesty flavour and a must try for Vishu, this year.</item>
+
+        <item>Beetroot is jam-packed with nutrients and vitamins, as well as plenty of disease-preventing properties.
+            Here we bring you an easy recipe of making beetroot amla juice at home.</item>
+
+        <item>description 2</item>
+        <item>description 3</item>
+
+
+    </string-array>
+</resources>
